@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tabla de multiplicar</title>
+<link rel="stylesheet" href="practica25.css" type="text/css"/>
+<script type = "text/javascript">
+	var num=1;
+	var multi=prompt("Introduce un numero para generar una tabla de multiplicar");
+</script>
+</head>
+<body>
+<script type = "text/javascript">
+	document.write("<table>");
+	document.write("<tr class='negro'><td>Operación</td><td>Resultado</td></tr>");
+	while(num<=10){
+		if (num%2==0){
+			document.write("<tr class='gris'><td>"+multi+" X "+num+"</td>");
+			document.write("<td>"+multi*num+"</td></tr>");
+			num++;
+		}else{
+			document.write("<tr class='blanco'><td>"+multi+" X "+num+"</td>");
+			document.write("<td>"+multi*num+"</td></tr>");
+			num++;
+		}
+	}
+	document.write("</table>");
+</script>
+</body>
+</html>

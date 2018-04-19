@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url(http://fonts.googleapis.com/css?family=Nobile);
+
+body {
+	background-color: #333;
+	color: #000;
+	
+	/*Quitamos los espacios entre los bordes y los contenidos*/
+	margin: 0px;
+}
+
+#contenedor {
+
+	position: absolute;
+	width: 1000px;
+	left: 50%;
+	top: 0px;
+	margin-left: -500px;
+	height: 100%;
+	
+	background-color: #F92;
+	font-family: Orbitron;
+}
+
+#S #contenedor {
+	background-color: cyan;
+}
+
+#O #contenedor {
+	background-color: red;
+}
+
+#C #contenedor {
+	background-color: grey;
+}
+
+#E #contenedor {
+	background-color: blue;
+}
+
+#F #contenedor {
+	background-color: orange;
+}
+
+#titulo {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	border-width: 2px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-color: #000;
+	border-style: solid;
+	background-color: #FFF;
+	letter-spacing: 6px;
+	font-size: 32px;
+	width: 980;
+}
+
+#titulo h1 {
+	display: inline;
+}
+
+#central {
+	text-align: left;
+	font-family: Nobile;
+	margin-left:200px;
+}
+
+#central span {
+	color: #333;
+	font-size: 12px;
+	float: right;
+	margin-right: 160px;
+}
+
+#central fieldset {
+	width: 600px;
+}
+
+#central input {
+	position:absolute;
+	left:400px;
+}

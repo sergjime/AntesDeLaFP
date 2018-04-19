@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <script type="text/javascript">
+		function saluda(formulario) {
+			if (formulario.nombre.value == "") {
+				alert ("Introduzca un nombre");
+				formulario.nombre.focus();
+				return false;
+			}
+			else {
+				alert ("Hola "+formulario.nombre.value);
+			}
+		}
+	</script>
+	</head>
+    <body>
+		<form action="respuesta.html" method="post" onsubmit="return saluda(this)">
+			Nombre:<input type="text" name="nombre">
+			<input type="submit" value="Enviar">
+		</form>
+		
+    </body>
+</html>

@@ -1,0 +1,39 @@
+body{
+	background-color: #FF9922;
+}
+h1{
+	font-size: 40px;
+	font-family: tahoma;
+}
+div h1{
+	background-color: white;
+	border: solid 2px black;
+	margin: auto;
+	text-align: center;
+	width: 90%;
+	height: 50px;
+	border-radius: 15px;
+	padding: 15px;
+}
+form{
+	background-color: #7FAAFF;
+	border: solid 1px black;
+	margin: auto;
+	width: 50%;
+	border-radius: 5px;
+	padding: 5px;
+}
+.centrado_b{
+	background-color: #AAD4FF;
+	margin: auto;
+	text-align: center;
+	border: double 1px black;
+	border-radius: 5px;
+	padding: 10px;
+	width: 50%;
+	height: 23px;
+}
+.centrado{
+	margin: auto;
+	text-align: center;
+}

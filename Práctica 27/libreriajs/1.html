@@ -1,0 +1,30 @@
+<html>
+    <head>
+	<script type="text/javascript">
+	function validar_obligatorio(campo,alerta)
+	{
+	  if (campo.value==null||campo.value=="") {
+			alert(alerta);
+			return false;
+		}
+	  else {
+		return true;
+	  }
+	}
+
+	function validar_formulario(formulario)
+	{
+	   if (validar_obligatorio (formulario.nombre, "El nombre es obligatorio") == false) {
+		  formulario.nombre.focus();
+		  return false;
+	   }
+	}
+	</script>
+	</head>
+    <body>
+		<form action="respuesta.html" method="post" onsubmit="return validar_formulario(this)">
+			Nombre: <input type="text" name="nombre" size="50"><br>
+			<input type="submit" value="Submit">
+		</form>
+    </body>
+</html>

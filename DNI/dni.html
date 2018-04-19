@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<title>DNI</title>
+<link rel="stylesheet" href="dni.css" type="text/css"/>
+</head>
+<body>
+<script type = "text/javascript">
+	var nif = prompt("Introduzca su DNI");
+	
+	function obtenerLetra(numero){
+		if(numero.length == 9){
+			var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+			var posicion = numero.substring(0,8) % 23;
+			var letra = letras.charAt(posicion);
+			return letra;
+		}else{
+			alert("La longitud de su DNI es incorrecta (ha de ser 9 carácteres)");
+		}
+	}
+	
+	var l = obtenerLetra(nif);
+	
+	if(l == nif.charAt(8)){
+		document.write("<table><td>El DNI es correcto</td></table>");
+	}else{
+		document.write("<table><td>El DNI es incorrecto</td></table>");
+	}
+</script>
+</body>
+</html>
